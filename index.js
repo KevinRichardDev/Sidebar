@@ -25,7 +25,7 @@
 
 //Correction
 
-sidebar = document.getElementById("side-bar");
+const sidebar = document.getElementById("side-bar");
 const content = document.querySelector(".content");
 
 btn.addEventListener("click", () => {
