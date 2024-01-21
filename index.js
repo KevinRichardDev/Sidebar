@@ -6,11 +6,11 @@
 // Créer en css l'hamburger menu qui se transforme en croix
 
 // Aide
-// Priorités en CSS : id > classe > baliseHtml
 
 // sideBar = document.getElementById("side-bar");
 // content = document.querySelector(".content");
 // toggleBtn = document.querySelector(".toggle-btn");
+// Priorités en CSS : id > classe > baliseHtml
 
 // btn.addEventListener("click", () => {
 //   sideBar.classList.toggle("active")
@@ -26,7 +26,15 @@
 //Correction
 
 sidebar = document.getElementById("side-bar");
+const content = document.querySelector(".content");
 
 btn.addEventListener("click", () => {
-  sidebar.classList.toggle("active")
-})
+  sidebar.classList.toggle("active");
+});
+
+content.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
+
+// Priorités en CSS : id > classe > baliseHtml
+
