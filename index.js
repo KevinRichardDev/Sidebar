@@ -7,17 +7,26 @@
 
 // Aide
 // Priorités en CSS : id > classe > baliseHtml
-sideBar = document.getElementById("side-bar");
-content = document.querySelector(".content");
-toggleBtn = document.querySelector(".toggle-btn");
+
+// sideBar = document.getElementById("side-bar");
+// content = document.querySelector(".content");
+// toggleBtn = document.querySelector(".toggle-btn");
+
+// btn.addEventListener("click", () => {
+//   sideBar.classList.toggle("active")
+//   sideBar.style.left = "0"
+//   content.style.opacity = 0.3
+// })
+
+// content.addEventListener("click", () => {
+//   sideBar.style.left = "-230px";
+//   content.style.opacity = 1
+// })
+
+//Correction
+
+sidebar = document.getElementById("side-bar");
 
 btn.addEventListener("click", () => {
-  sideBar.classList.toggle("active")
-  sideBar.style.left = "0"
-  content.style.opacity = 0.3
-})
-
-content.addEventListener("click", () => {
-  sideBar.style.left = "-230px";
-  content.style.opacity = 1
+  sidebar.classList.toggle("active")
 })

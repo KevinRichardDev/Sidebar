@@ -59,3 +59,10 @@ li:hover {
   background: #292929;
   color: #fcfcfb;
 }
+
+#side-bar.active {
+  left: 0;
+}
+.active ~ .content {
+  opacity: 0.3;
+}
